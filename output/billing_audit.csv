@@ -1,0 +1,43 @@
+Employee_ID,Employee_Name,Project,Hours_Worked,Hours_Billed,Rate_Charged,Rate_per_Hour,Max_Hours_Per_Week,Status,Discrepancies,Corrective_Actions,AI_Explanation
+101,Alice,A,40,40,20,20,40,OK,,No action required,"
+No discrepancies detected.
+
+Suggested Action:
+No correction required.
+"
+102,Bob,A,38,40,22,20,40,ERROR,"OVERBILLING,RATE_MISMATCH,BILLING_AMOUNT_MISMATCH",Adjust billed hours to match approved timesheet and trigger review. | Correct billed rate to contractual rate and regenerate invoice. | Recalculate invoice totals based on approved rates and hours.,"
+Root Cause:
+Billed hours exceed approved worked hours. Charged rate differs from contract rate. Invoice amount does not match approved calculation.
+
+Suggested Corrective Actions:
+Adjust invoice hours and trigger supervisor review. Correct billing rate and recalculate invoice. Recalculate billing totals.
+
+Generated via deterministic fallback reasoning.
+"
+103,Charlie,B,45,50,25,25,40,ERROR,"OVERBILLING,CONTRACT_HOURS_VIOLATION,BILLING_AMOUNT_MISMATCH",Adjust billed hours to match approved timesheet and trigger review. | Escalate for contract exception approval or reduce hours. | Recalculate invoice totals based on approved rates and hours.,"
+Root Cause:
+Billed hours exceed approved worked hours. Worked hours exceed contractual limits. Invoice amount does not match approved calculation.
+
+Suggested Corrective Actions:
+Adjust invoice hours and trigger supervisor review. Escalate for contract exception approval. Recalculate billing totals.
+
+Generated via deterministic fallback reasoning.
+"
+104,Diana,B,42,42,25,25,40,ERROR,CONTRACT_HOURS_VIOLATION,Escalate for contract exception approval or reduce hours.,"
+Root Cause:
+Worked hours exceed contractual limits.
+
+Suggested Corrective Actions:
+Escalate for contract exception approval.
+
+Generated via deterministic fallback reasoning.
+"
+105,Eve,C,36,36,28,30,35,ERROR,"RATE_MISMATCH,CONTRACT_HOURS_VIOLATION,BILLING_AMOUNT_MISMATCH",Correct billed rate to contractual rate and regenerate invoice. | Escalate for contract exception approval or reduce hours. | Recalculate invoice totals based on approved rates and hours.,"
+Root Cause:
+Charged rate differs from contract rate. Worked hours exceed contractual limits. Invoice amount does not match approved calculation.
+
+Suggested Corrective Actions:
+Correct billing rate and recalculate invoice. Escalate for contract exception approval. Recalculate billing totals.
+
+Generated via deterministic fallback reasoning.
+"
